@@ -169,3 +169,65 @@ void SearchWindow::on_Reset_clicked()
     model->setTable("Pricelist");
     model->select();
 }
+
+void SearchWindow::on_nameSortBox_stateChanged(int arg)
+{
+    if (arg == Qt::Checked)
+    {
+        ui.priceSortBox->setChecked(false);
+    }
+}
+
+void SearchWindow::on_priceSortBox_stateChanged(int arg)
+{
+    if (arg == Qt::Checked)
+    {
+        ui.nameSortBox->setChecked(false);
+    }
+}
+
+void SearchWindow::on_minSort_stateChanged(int arg)
+{
+    if (arg == Qt::Checked)
+    {
+        ui.maxSort->setChecked(false);
+    }
+}
+
+void SearchWindow::on_maxSort_stateChanged(int arg)
+{
+    if (arg == Qt::Checked)
+    {
+        ui.minSort->setChecked(false);
+    }
+}
+
+void SearchWindow::on_SortButton_clicked()
+{
+    if ((ui.nameSortBox->isChecked() || ui.priceSortBox->isChecked()) && (ui.minSort->isChecked() || ui.maxSort->isChecked()))
+    {
+        if (ui.nameSortBox->isChecked())
+        {
+            if (ui.minSort->isChecked())
+            {
+                model->setSort(1, Qt::AscendingOrder);
+            }
+            else
+            {
+                model->setSort(1, Qt::DescendingOrder);
+            }
+        }
+        else
+        {
+            if (ui.maxSort->isChecked())
+            {
+                model->setSort(2, Qt::DescendingOrder);
+            }
+            else
+            {
+                model->setSort(2, Qt::AscendingOrder);
+            }
+        }
+        model->select();
+    }
+}
