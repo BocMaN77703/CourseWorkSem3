@@ -6,6 +6,8 @@
 #include <Qdebug>
 #include <QtSql/qsqlquery.h>
 #include <QtSql/qsqltablemodel.h>
+#include <qspinbox.h>
+#include <qitemdelegate.h>
 
 class EditWindow : public QWidget
 {
@@ -25,5 +27,4 @@ protected slots:
     void on_tableView_clicked(const QModelIndex &index);
     void on_Close_clicked();
 };
-
 

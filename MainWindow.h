@@ -18,5 +18,6 @@ private:
 	SearchWindow form2;
 protected slots:
 	void on_Search_clicked();
+	void on_Exit_clicked();
 	void on_Edit_clicked();
 };

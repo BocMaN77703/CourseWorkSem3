@@ -8,6 +8,8 @@ EditWindow::~EditWindow()
     delete model;
 }
 
+
+
 EditWindow::EditWindow(QWidget* parent)
     : QWidget(parent)
 {

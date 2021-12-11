@@ -48,6 +48,9 @@
      <height>551</height>
     </rect>
    </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>120</number>
+   </attribute>
   </widget>
   <widget class="QPushButton" name="Close">
    <property name="geometry">

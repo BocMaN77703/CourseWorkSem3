@@ -21,3 +21,8 @@ void MainWindow::on_Search_clicked()
 {
 	form2.show();
 }
+
+void MainWindow::on_Exit_clicked()
+{
+	close();
+}
