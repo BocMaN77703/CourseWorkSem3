@@ -7,7 +7,6 @@
 #include <QtSql/qsqlquery.h>
 #include <QtSql/qsqltablemodel.h>
 #include <qspinbox.h>
-#include <qitemdelegate.h>
 
 class EditWindow : public QWidget
 {

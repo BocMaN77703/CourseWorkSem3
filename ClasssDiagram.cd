@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="MainWindow">
+    <Position X="7.25" Y="0.5" Width="2" />
+    <AssociationLine Name="form2" Type="SearchWindow">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-4.6" Y="10.951" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="form" Type="EditWindow">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-4.628" Y="-6.28" Height="0.182" Width="0.562" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAABAAAAEAIAQAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="form" />
+      <Field Name="form2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EditWindow">
+    <Position X="10" Y="2.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAQEAAAAAAAAAACBAAAAAQAAACIAAAIAAA=</HashCode>
+      <FileName>EditWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SearchWindow">
+    <Position X="3.75" Y="2.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>ABAAACAgCAAQEgEAAIAAAAAAgAAABCBAAAAIAAAIAAA=</HashCode>
+      <FileName>SearchWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
